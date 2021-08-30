@@ -1,0 +1,61 @@
+@import "./variables";
+
+.wrapper {
+  margin-top: 3.5em;
+}
+
+.keys {
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 3em;
+  font-family: $mainFont;
+}
+
+.key {
+  color: $primaryColor;
+  border: 3px $primaryColor solid;
+  padding: 1em 1.2em;
+  border-radius: 100%;
+  font-size: 1.2em;
+  box-shadow: 0px 0px 5px $primaryColor, 0px 0px 5px inset $primaryColor;
+  transition: all 0.12s;
+}
+
+.key:nth-child(1),
+.key:nth-child(2),
+.key:nth-child(3),
+.key:nth-child(4),
+.key:nth-child(5),
+.key:nth-child(6),
+.key:nth-child(7),
+.key:nth-child(8),
+.key:nth-child(9),
+.key:nth-child(10) {
+  justify-self: start;
+}
+
+.key:nth-child(11),
+.key:nth-child(12),
+.key:nth-child(13),
+.key:nth-child(14),
+.key:nth-child(15),
+.key:nth-child(16),
+.key:nth-child(17),
+.key:nth-child(18),
+.key:nth-child(19) {
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+.key:nth-child(20),
+.key:nth-child(21),
+.key:nth-child(22),
+.key:nth-child(23),
+.key:nth-child(24),
+.key:nth-child(25),
+.key:nth-child(26) {
+  grid-row: 3/4;
+  justify-self: end;
+}

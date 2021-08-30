@@ -1,0 +1,25 @@
+@import "./variables";
+
+.background-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+header {
+  max-height: 10em;
+  h1 {
+    font-family: "Allison", cursive;
+    color: $primaryColor;
+    font-size: 3.5em;
+  }
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2.5em;
+}

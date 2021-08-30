@@ -1,0 +1,28 @@
+footer {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+  position: relative;
+}
+
+.switch-select {
+  cursor: pointer;
+}
+
+select {
+  background: $primaryColor;
+  font-family: $mainFont;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  color: white;
+  width: 12rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-right: 1.5em;
+
+  border: none;
+  text-align: center;
+}

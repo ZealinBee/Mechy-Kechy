@@ -1,0 +1,146 @@
+.background-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+header {
+  max-height: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 2.5em;
+}
+
+header h1 {
+  font-family: "Allison", cursive;
+  color: black;
+  font-size: 3.5em;
+}
+
+.wrapper {
+  margin-top: 3.5em;
+}
+
+.keys {
+  font-weight: 600;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  margin-left: 3em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.key {
+  color: black;
+  border: 3px black solid;
+  padding: 1em 1.2em;
+  border-radius: 100%;
+  font-size: 1.2em;
+  -webkit-box-shadow: 0px 0px 5px black, 0px 0px 5px inset black;
+          box-shadow: 0px 0px 5px black, 0px 0px 5px inset black;
+  -webkit-transition: all 0.12s;
+  transition: all 0.12s;
+}
+
+.key:nth-child(1),
+.key:nth-child(2),
+.key:nth-child(3),
+.key:nth-child(4),
+.key:nth-child(5),
+.key:nth-child(6),
+.key:nth-child(7),
+.key:nth-child(8),
+.key:nth-child(9),
+.key:nth-child(10) {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.key:nth-child(11),
+.key:nth-child(12),
+.key:nth-child(13),
+.key:nth-child(14),
+.key:nth-child(15),
+.key:nth-child(16),
+.key:nth-child(17),
+.key:nth-child(18),
+.key:nth-child(19) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.key:nth-child(20),
+.key:nth-child(21),
+.key:nth-child(22),
+.key:nth-child(23),
+.key:nth-child(24),
+.key:nth-child(25),
+.key:nth-child(26) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+footer {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em;
+  position: relative;
+}
+
+.switch-select {
+  cursor: pointer;
+}
+
+select {
+  background: black;
+  font-family: "Courier New", Courier, monospace;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  color: white;
+  width: 12rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-right: 1.5em;
+  border: none;
+  text-align: center;
+}
+
+.playing {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: aqua;
+  border: 3px aqua solid;
+  padding: 1em 1.2em;
+  border-radius: 100%;
+  font-size: 1.2em;
+  -webkit-box-shadow: 0px 0px 5px aqua, 0px 0px 5px inset aqua;
+          box-shadow: 0px 0px 5px aqua, 0px 0px 5px inset aqua;
+}
+/*# sourceMappingURL=style.css.map */
